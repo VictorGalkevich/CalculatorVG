@@ -2,12 +2,12 @@
 import java.util.Stack;
 
 public class Calculus {
-    public static Double calculator(String expression){
-            try {
-                return Body(expression);
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
+    public static Double calculator(String expression) {
+        try {
+            return Body(expression);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 

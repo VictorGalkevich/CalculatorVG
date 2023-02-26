@@ -1,4 +1,4 @@
-public class ParseException extends Exception{
+public class ParseException extends Exception {
 
     public ParseException() {
     }

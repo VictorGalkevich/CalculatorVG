@@ -2,7 +2,8 @@ public class Token {
     private Character ch;
     private Double value;
 
-    public Token() {}
+    public Token() {
+    }
 
     public Double getValue() {
         return value;
