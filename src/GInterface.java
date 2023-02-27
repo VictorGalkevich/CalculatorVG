@@ -44,9 +44,11 @@ public class GInterface extends JFrame implements ActionListener {
         String s1 = e.getActionCommand();
         if (s1.charAt(0) == 'c') {
             textField.setText("");
+            str = new StringBuilder();
         } else if (s1.charAt(0) == '=') {
             String s = textField.getText();
             textField.setText(Calculus.calculator(s));
+            str = new StringBuilder(Calculus.calculator(s));
         } else {
             str.append(e.getActionCommand());
             textField.setText(str.toString());

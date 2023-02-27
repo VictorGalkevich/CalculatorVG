@@ -6,8 +6,7 @@ public class Calculus {
         try {
             return Body(expression).toString();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return "error";
+           return e.getMessage();
         }
     }
 
