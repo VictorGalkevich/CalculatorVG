@@ -2,13 +2,13 @@
 import java.util.Stack;
 
 public class Calculus {
-    public static Double calculator(String expression) {
+    public static String calculator(String expression) {
         try {
-            return Body(expression);
+            return Body(expression).toString();
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            return "error";
         }
-        return null;
     }
 
     public static Double Body(String expression) throws ParseException {

@@ -41,14 +41,12 @@ public class GInterface extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(str);
         String s1 = e.getActionCommand();
         if (s1.charAt(0) == 'c') {
-            str = new StringBuilder();
             textField.setText("");
         } else if (s1.charAt(0) == '=') {
-            textField.setText(Calculus.calculator(str.toString()).toString());
-            str = new StringBuilder(Calculus.calculator(str.toString()).toString());
+            String s = textField.getText();
+            textField.setText(Calculus.calculator(s));
         } else {
             str.append(e.getActionCommand());
             textField.setText(str.toString());
